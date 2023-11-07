@@ -1,0 +1,556 @@
+body{
+    margin:0;
+}
+.hamburger-menu{
+    display: none;
+}
+.menu__box{
+    display: none;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: #d18b00;
+    position: fixed;
+    margin: 0;
+    display: flex;
+    align-items:center;
+    border-bottom: 5px solid #f00;
+}
+nav *{
+    margin:0;
+}
+nav img{
+    width: 90px;
+    padding: 5px;
+    height: 90px;
+    border-radius: 45px;
+}
+.container-logo-slogan{
+    font-size: 15px;
+    padding: 0 10px;
+}
+.container-links{
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-link{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color:#000;
+    text-decoration: none;
+    text-align: center;
+}
+.nav-link:hover{
+    background-color: #583f00;
+    color: #fff;
+}
+/*          MAIN PRIMERA PARTE            */
+.padding{
+    padding-top: 100px;
+}
+body{
+    background-color: #fa0;
+}
+main{
+    font-family: sans-serif;
+}
+main img{
+    width: 100%;
+    height: 550px;
+    border-top:5px solid #f00;
+    border-bottom: 5px solid #f00;
+}
+.disfrutar-img{
+    margin-top: 105px;
+}
+.container-disfrutar, .container-locations{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.container-disfrutar p, .container-locations p{
+    font-size: 22px;
+}
+.container-history{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.container-history p{
+    font-size: 22px;
+}
+.container-vision-mision{
+    font-size: 20px;
+    margin:0px 20px;
+}
+.container-vision-mision b{
+    color:#d00000;
+}
+.container-foda{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 5px dotted #f00;
+}
+.container-foda div{
+    margin: 0 5px;
+}
+.container-fortalezas h3, .container-oportunidades h3{
+    color: #007600;
+}
+.container-debilidades h3, .container-amenazas h3{
+    color: #d00000;
+}
+.suggestions-img{
+    height: 550px;
+}
+.container-contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.contact-link{
+    text-decoration: none;
+}
+.container-contact div{
+    margin:0 10px;
+}
+
+form textarea{
+    resize: none;
+}
+.button-submit{
+    height: 40px;
+    width: 38pc;
+    border: 2px solid #d00000;
+    border-radius: 8px;
+    background-color: #ffc400;
+    color: #d00000;
+    font-size: 19px;
+    font-weight: 600;
+}
+.button-submit:hover{
+    cursor: pointer;
+    background-color: #a17400;
+    color: #fff;
+}
+.container-suggestions h1{
+    font-size: 27px;
+}
+footer{
+    height: 100px;
+    color: #fff;
+    background-color: #d00000;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+/*              DISEÑO RESPONSIVE        */
+@media screen and (max-width: 1100px) {
+    .disfrutar-img{
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .container-contact{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 870px){
+    .disfrutar-img{
+        height: 300px;
+    }
+    .container-history h1, .container-disfrutar h1,
+    .container-locations h1, .container-contact h1{
+        font-size: 24px;
+    }
+    * p, .container-history p, .container-disfrutar p, .container-locations p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 750px) {
+    main img{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 660px) {
+    main{
+        display:flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+    main div{
+        font-size: 15px;
+    }
+    main img{
+        height: 300px;
+        object-fit: cover;
+    }
+    .suggestions-img{
+        height: 300px;
+    }
+    .container-links{
+        display: none;
+    }
+    .container-history h1, .container-disfrutar h1,
+    .container-locations h1, .container-contact h1{
+        font-size: 22px;
+    }
+    .container-history p, .container-disfrutar p, .container-locations p{
+        font-size: 17px;
+    }
+    #reseña, .button-submit{
+        width: 400px;
+    }
+    /* menu hamburguesa */
+    .hamburger-menu{
+        display: initial;
+    }
+    .menu__box{
+        display: initial;
+    }
+    #menu__toggle {
+        opacity: 0;
+    }
+    #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+    }
+    #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+    }
+    #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+    }
+    .menu__btn {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ff0000;
+    transition-duration: .25s;
+    }
+    .menu__btn > span::before {
+    content: '';
+    top: -8px;
+    }
+    .menu__btn > span::after {
+    content: '';
+    top: 8px;
+    }
+    .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #333333;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+    }
+    .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+    }
+    .menu__item:hover {
+    background-color: #CFD8DC;
+    color: #000;
+    }
+    /* Fin del menu hamburguesa */
+}
+@media screen and (max-width: 418px) {
+    .container-foda{
+        display: flex;
+        flex-direction: column;
+    }
+    #reseña, .button-submit{
+        width: 260px;
+    }
+    main img{
+        height: 200px;
+    }
+    .disfrutar-img, .suggestions-img{
+        height: 200px;
+    }
+}
+
+/* manejo de la primera parte y segunda parte */
+#segunda-parte{
+    display: none;
+}
+/*          SEGUNDA PARTE                    */
+.segunda-parte b{
+    color: #d00000;
+    text-decoration: underline;
+}
+
+.segunda-parte{
+    margin: 20px;
+}
+.segunda-parte p{
+    font-size: 18px;
+}
+article{
+    margin: auto;
+}
+.links-segunda-parte{
+    border: 2px solid #d00000;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+}
+.links-segunda-parte *{
+    margin: 10px;
+    text-decoration: none;
+    list-style-type: decimal;
+}
+.links-segunda-parte a:hover{
+    color: #5d58f2;
+}
+.links-segunda-parte a:visited{
+    color: #0000ff;
+}
+.tipo-de-empresa , .organigrama{
+    border: 4px dotted #d00000;
+}
+.tipo-de-empresa{
+    margin: 20px 250px;
+}
+.tipo-de-empresa p, .organigrama p{
+    margin: 20px;
+}
+.tipo-de-empresa h2, .organigrama h2{
+    text-align: center;
+}
+/* aca iría la parte del organigrama */
+.recursos-y-financiacion{
+    margin: 50px auto;
+}
+.recursos-y-financiacion h2{
+    text-align: center;
+}
+.grid-recursos-y-financiacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.recursos-y-financiacion{
+    border: 4px dotted #d00000;
+}
+.grid-recursos-y-financiacion h3{
+    text-align: center;
+}
+.grid-recursos-y-financiacion div{
+    margin: 20px;
+}
+
+
+.analisis-competencia{
+    border: 4px dotted #d00000;
+    margin: 40px auto;
+}
+.analisis-competencia > *{
+    margin: 20px;
+}
+.analisis-competencia h2{
+    text-align: center;
+}
+.segmentacion-del-mercado{
+    border: 4px dotted #d00000;
+}
+.segmentacion-del-mercado > *{
+    margin: 20px;
+}
+.segmentacion-del-mercado h2{
+    text-align: center;
+}
+.proveedores{
+    border: 4px dotted #d00000;
+}
+.proveedores > *{
+    margin: 20px;
+}
+.proveedores h2{
+    text-align: center;
+}
+
+.pcps{
+    border: 4px dotted #d00000;
+    margin: 50px auto;
+}
+.pcps > *{
+    margin: 20px;
+}
+
+.pcps h2{
+    text-align: center;
+}
+
+.servicio-produccion{
+    border: 4px dotted #d00000;
+}
+.servicio-produccion > *{
+    margin: 20px
+}
+.servicio-produccion h2{
+    text-align: center;
+}
+
+.grid-produccion-servicio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.grid-produccion-servicio div{
+    margin: 5px;
+}
+.grid-produccion-servicio h3{
+    text-align: center;
+}
+
+.marketing-publicidad{
+    border: 4px dotted #d00000;
+    margin: 50px auto;
+}
+
+.marketing-publicidad > *{
+    margin: 20px;
+}
+.marketing-publicidad h2{
+    text-align: center;
+}
+.grid-marketing-publicidad{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 500px;
+}
+.marketing p{
+    margin: 5px;
+}
+.publicidad p{
+    margin: 5px;
+}
+.video-publicidad{
+    grid-column: 1/3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.video-publicidad iframe{
+    height: 80%;
+    text-align: center;
+}
+
+.rrhh{
+    border: 4px dotted #d00000;
+}
+.rrhh > *{
+    margin: 20px;
+}
+.rrhh h2{
+    text-align: center;
+}
+
+.rrhh > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nomina-de-empleados{
+    height: 410px;
+}
+.recibo-de-sueldo{
+    height: 750px;
+}
+.iframe-empleados, .iframe-sueldos{
+    width: 100%;
+    height: 100%;
+}
+/* FALTA LA ÚLTIMA PARTE DEL TRABAJO */
+
+/* ------------------------------------ */
+
+/* MEDIA QUERIES */
+/* 950PX */
+
+@media screen and (max-width: 950px){
+    .analisis-competencia{
+        margin: 40px auto;
+    }
+    .tipo-de-empresa{
+        width: 100%;
+        margin: 40px auto;
+    }
+}
+@media screen and (max-width: 875px){
+    .segunda-parte p{
+        font-size: 18px;
+    }
+    .segunda-parte h4{
+        font-size: 16px;
+    }
+    .links-segunda-parte{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 790px){
+    .grid-recursos-y-financiacion{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr minmax(600px);
+    }
+}
+@media screen and (max-width: 600px){
+    .grid-produccion-servicio{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-marketing-publicidad{
+        display: flex;
+        flex-direction: column;
+    }
+    .video-publicidad{
+        height: 400px;
+    }
+    .iframe-publicidad{
+        width: 100%;
+    }
+}
