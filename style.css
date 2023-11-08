@@ -460,7 +460,7 @@ article{
 .grid-marketing-publicidad{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 600px 1fr;
+    grid-template-rows: 1fr 600px;
 }
 .marketing p{
     margin: 5px;
@@ -468,6 +468,10 @@ article{
 .publicidad p{
     margin: 5px;
 }
+.publicidad{
+    grid-column: 2/3;
+}
+
 .video-publicidad{
     grid-column: 1/3;
     display: flex;
