@@ -460,7 +460,7 @@ article{
 .grid-marketing-publicidad{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 500px;
+    grid-template-rows: 1fr 600px;
 }
 .marketing p{
     margin: 5px;
@@ -475,7 +475,7 @@ article{
     flex-direction: column;
 }
 .video-publicidad iframe{
-    height: 80%;
+    height: 100%;
     text-align: center;
 }
 
@@ -495,7 +495,7 @@ article{
     align-items: center;
 }
 .nomina-de-empleados{
-    height: 410px;
+    height: 385px;
 }
 .recibo-de-sueldo{
     height: 750px;
@@ -504,7 +504,18 @@ article{
     width: 100%;
     height: 100%;
 }
-/* FALTA LA ÚLTIMA PARTE DEL TRABAJO */
+
+.tramites{
+    border: 4px dotted #d00000;
+    margin: 50px auto;
+}
+.tramites > *{
+    margin: 20px;
+}
+.tramites h2{
+    text-align: center;
+}
+
 
 /* ------------------------------------ */
 
