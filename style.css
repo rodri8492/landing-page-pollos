@@ -460,7 +460,7 @@ article{
 .grid-marketing-publicidad{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 600px;
+    grid-template-rows: 1fr 600px 1fr;
 }
 .marketing p{
     margin: 5px;
