@@ -18,9 +18,9 @@ Trámites legales e impositivos. Habilitaciones
 
 
 afip tema de inscripcio como ri de la srl
-
 IGJ
 
 habilitacion de municipal en la pagina de avellaneda# landing-page-pollos
 
-nota: no se por qué, pero el elemento .publicidad es blockeado por el adblock, cosa a tener en cuenta
+
+HACER: ARGENTINIZAR LA PÁGINA Y LOS DATOS

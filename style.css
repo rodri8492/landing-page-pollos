@@ -130,7 +130,7 @@ form textarea{
 }
 .button-submit{
     height: 40px;
-    width: 38pc;
+    width: 100%;
     border: 2px solid #d00000;
     border-radius: 8px;
     background-color: #ffc400;
@@ -302,7 +302,7 @@ footer{
         flex-direction: column;
     }
     #reseña, .button-submit{
-        width: 260px;
+        width: 100%;
     }
     main img{
         height: 200px;
